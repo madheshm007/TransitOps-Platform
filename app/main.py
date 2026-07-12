@@ -2,11 +2,12 @@ from fastapi import FastAPI
 
 app = FastAPI(
     title="TransitOps API",
-    version="1.0.0"
+    version="1.0.0",
 )
+
 
 @app.get("/")
 def root():
     return {
-        "message": "Welcome to TransitOps API 🚚"
+        "message": "TransitOps Backend Running 🚚"
     }
